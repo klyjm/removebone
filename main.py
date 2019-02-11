@@ -1,6 +1,7 @@
 import cv2
 import os
 import math
+import numpy as np
 
 
 imgpath=input('图像路径：')
