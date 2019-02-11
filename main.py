@@ -10,7 +10,7 @@ if not os.path.exists(outputpath+'\\'+os.path.basename(imgpath)):
     os.makedirs(outputpath+'\\'+os.path.basename(imgpath))
 for file in os.listdir(imgpath):
     dataarray=cv2.imread(imgpath+'\\'+file, cv2.IMREAD_GRAYSCALE)
-
+    maxdata=np.max(dataarray)
     seed=[]
     seed.append(maxdata)
     while len(seed)>0:
